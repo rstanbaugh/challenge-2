@@ -71,32 +71,39 @@ body {
 
 /* hero section */
 .hero {
-    flex;
-    height: 200px;
-    width: 100%;
-    margin-bottom: 25px;
-    /* background-image: url("../images/digital-marketing-meeting.jpg"); */
-    /* background-size: cover; */
-    background-position: center;
-    justify-content: flex-end;
-    align-items: flex-end;
+    
 }
 
+
+/* Main Section */
+main {
+    background-color: var(--header-secondary);
+}
+
+/* footer section */
+.footer {
+    padding: 30px;
+    clear: both;
+    text-align: center;
+}
+
+.footer h1 {
+    font-size: 20px;
+    border-bottom: 4px ;
+}
+/* end footer section */
 
 /* ####################### */
 
 
-/* set some defaults */
-
-
-a {
+/* a {
     color: #ffffff;
     text-decoration: none;
 }
 
 p {
     font-size: 16px;
-}
+} */
 /* end whole document  */
 
 
@@ -108,24 +115,16 @@ p {
 
 /* main body */
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
 
-.float-right {
-    float: right;
-    margin-left: 20px;
-}
 /* contents section */
-.content {
+/* .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
-}
+} */
 
 /* benefits section */
-.benefits {
+/* .benefits {
     margin-right: 20px;
     padding: 25px;
     clear: both;
@@ -134,53 +133,41 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
-}
+} */
 
 /* new .benefit / subclasses to replace redundant code  - DRY*/
-.benefit-detail {
+/* .benefit-detail {
     margin-bottom: 32px;
     color: #ffffff;    
-}
+} */
 
-.benefit-detail h3 {
+/* .benefit-detail h3 {
     margin-bottom: 10px;
     text-align: center;    
-}
+} */
 
-.benefit-detail img {
+/* .benefit-detail img {
     display: block;
     margin: 10px auto;
     max-width: 150px;    
-}
+} */
 
 /* new .services / subclasses to replacae redundant code - DRY */
-.services {
+/* .about-me {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: var(--background);
     color: #ffffff;
-}
+} */
 
-.services img {
+/* .services img {
     max-height: 200px;
 }
 
 .services h2 {
     margin-bottom: 20px;
     font-size: 36px;    
-}
+} */
 
-/* footer section */
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
 
-.footer h2 {
-    font-size: 20px;
-}
-/* mend footer section */
