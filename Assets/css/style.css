@@ -10,6 +10,7 @@
     --header-primary:  #9ee0d7;
     --header-secondary: #2a607c;
     --background:  #e9eef4;
+    --shadow: rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -18,23 +19,24 @@ body {
 
 /* header section */
 .header {
-    flex;
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 7px 25px 15px 0;
+    padding: 7px 10px 15px 0;
     background-color: var(--header-secondary);
-  
 }
 
 .header h1 {
     margin:  4px 0;
-    padding: 10px 10px 10px 80px;
+    padding: 10px 10px 10px 60px;
     display: inline-block;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: bold;
     background-color: var(--header-primary);
 }
 
 .header h1 a {
+    text-decoration: none;
     color: var(--header-secondary);
 }
 /* end header */
@@ -42,36 +44,52 @@ body {
     
 /* nav section */
 .header nav {
-
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
+    display: flex;
+    align-items:center;
+    padding-top: 10px;
+    /* margin: 7px 0; */
     font-size: 20px;
 }
 
 .header nav ul {
-    list-style-type: none;
-}
-
-.header nav ul li{
-    display: inline-block;
-    padding: 0 10px 5px 10px ;
-    margin-left: 25px;
-    margin-top: 10px;
-    color: #9ee0d7;
-    border-bottom: 4px solid var(--header-primary);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    list-style: none;
 }
 
 .header nav ul li a {
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 2vw;
+    font-weight: lighter;
+    text-decoration: none;
     color: var(--header-primary);
+    padding: 5px 10px;
+    border-bottom: 3px solid var(--header-primary);
+    margin: 5px;
+    text-shadow: 0 0 10px var(--shadow);
 }
+
+header nav ul li a:hover {
+    background: var(--header-primary);
+    color: var(--header-secondary);    border-radius: 10px;
+    text-shadow: none;
+  }
 /* end nav section */
 
 
 /* hero section */
 .hero {
-    
+    /* background-color: var(--header-secondary); */
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: url(".assets/images.hero-bg.jpg");
+    object-fit:cover;
+
 }
 
 
