@@ -146,7 +146,7 @@ header nav ul li a:hover {
 .app {
     flex: 1;
     /* padding: 5px; */
-    min-width: 50%;
+    min-width: 45%;
 }
 
 .app img {
@@ -158,7 +158,7 @@ header nav ul li a:hover {
 .app-featured {
     flex: 1;
     /* padding: 5px; */
-    min-width: 50%;
+    min-width: 75%;
 }
 
 .app-featured img {
