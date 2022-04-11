@@ -6,11 +6,13 @@
     margin: 0;
 }
 
+/* css variables */
 :root {
     --header-primary:  #9ee0d7;
     --header-secondary: #2a607c;
     --background:  #e9eef4;
     --shadow: rgba(0, 0, 0, 0.5);
+    --line-thickness: 3px;
 }
 
 body {
@@ -50,7 +52,7 @@ body {
     align-items:center;
     padding-top: 10px;
     /* margin: 7px 0; */
-    font-size: 20px;
+    /* font-size: 20px; plan to delete this */
 }
 
 .header nav ul {
@@ -68,7 +70,7 @@ body {
     text-decoration: none;
     color: var(--header-primary);
     padding: 5px 10px;
-    border-bottom: 3px solid var(--header-primary);
+    border-bottom: var(--line-thickness) solid var(--header-primary);
     margin: 5px;
     text-shadow: 0 0 10px var(--shadow);
 }
@@ -101,86 +103,156 @@ header nav ul li a:hover {
     margin-right: 60px;
     margin-bottom: 10px;
 }
+/* end of hero */
+
+
+/* ################# */
 
 /* Main Section */
 
-.about-me {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 15px;
-
-}
-
-.work {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
-
-}
-
-/* footer section */
-.footer {
-    display: flex;
-    flex-wrap: wrap;
-    /* padding: 5px 10px; */
-}
-
+/* each part of the main section will be divided between left-side and right-side */
+/* this class sets up the left half of the body */
 .left-side {
+    /* 1/4 of the widht of the page */
     flex: 1;
     text-align: end;
     margin: 5px 15px 5px 0;
     padding-right: 5px;
     font-size: 20px;
-    border-right: 3px solid var(--header-secondary);
+    border-right: var(--line-thickness) solid var(--header-secondary);
 }
 
+/* this class sets up the right side of the page in teh body */
 .right-side {
     display: flex;
     flex: 3;
+    width: 75%;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 0 20px 10px 10px;
+    padding-top: 5px;
+    justify-content: space-between;
+    margin: 5 20px 10px 10px;
+}
+
+
+/* about me section */
+.about-me {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.about-me p {
+    font-size: 16px;
+}
+/* end about me */
+
+
+/* work section */
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+
+.app-featured {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.app-featured img {
+    min-width: none;
+    /* width: 100%; */
+    height: 200px;
+    border: var(--line-thickness) solid var(--header-primary);
+}
+
+.app-featured h3 {
+    background-color: var(--header-primary);
+    color: var(--header-secondary);
+    width: 25%;
+    padding: 0 5px;
+}
+
+.app-featured p {
+    background-color: var(--header-primary);
+    color: var(--header-secondary);
+    width: 25%;
+    padding: 0 5px;
+    font-size: small;
 }
 
 
 .app {
-    flex: 1;
-    /* padding: 5px; */
-    min-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 49%;
+    height: 100px;
+
 }
 
 .app img {
-    width: 400px;
-    border: 3px solid var(--header-primary);
-
+    /* width: 400px; */
+    width: fit-content  %;
+    height: 100px;
+    border: var(--line-thickness) solid var(--header-primary);
 }
 
-.app-featured {
-    flex: 1;
-    /* padding: 5px; */
-    min-width: 75%;
+.app h3 {
+    background-color: var(--header-primary);
+    color: var(--header-secondary);
+    width: 25%;
+    padding: 0 5px;
 }
 
-.app-featured img {
-    width: 800px;
-    border: 3px solid var(--header-primary);
+.app p {
+    background-color: var(--header-primary);
+    color: var(--header-secondary);
+    width:25%;
+    padding: 0 5px;
+    font-size: small;
 }
 
+/* end work section */
 
-.footer-right-side {
-    flex: 3;
-    justify-content: space-around;
+
+/* footer / contact me section */
+
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-evenly;
     align-content: center;
-    margin: 0 20px 10px 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: px;
 }
 
-.footer-right-side a {
-    /* text-decoration: none; */
+.contact-info a {
     /* padding-bottom: 5px; */
-    /* color: var(--header-secondary); */
-    border-bottom: 3px solid var(--header-secondary);
+    padding: 0 5px 0 5px;
+    text-decoration: none;
+    border-bottom: var(--line-thickness) solid var(--header-secondary);
+}
+
+.contact-info a:hover {
+    background: var(--header-primary);
+    color: var(--header-secondary);    
+    border-radius: 10px;
+    border-bottom: 0ch;
 }
 /* end footer section */
+
 
 /* end main body */
 
@@ -200,20 +272,7 @@ header nav ul li a:hover {
 .footer h2 {
     width: 100%;
     font-size: 30px;
-    /* border-bottom: 3px solid var(--header-secondary); */
+    /* border-bottom: var(--line-thickness) solid var(--header-secondary); */
 }
 
-.footer div {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 10px;
-}
-
-.footer div a {
-    text-decoration: none;
-    padding-bottom: 5px;
-    color: var(--header-secondary);
-    /* border-bottom: 3px solid var(--header-secondary); */
-}
 }
