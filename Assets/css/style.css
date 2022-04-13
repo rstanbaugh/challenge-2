@@ -88,39 +88,53 @@ header nav ul li a:hover {
     width: 100%;
     height: 200px;
     display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    background-image: url("../images/hero-bg.jpg");
-    background-color: rgba(158, 202, 205, 0.7);
-    /* background-color: rgba(42, 96, 124, 0.7); */
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-position: center;
     justify-content: flex-end;
     align-items: flex-end;
+    /* flex-direction: column; */
+    /* background-image: url("../images/hero-bg.jpg"); */
+    /* background-color: rgba(158, 202, 205, 0.7); */
+    /* background-color: rgba(42, 96, 124, 0.7); */
+    /* background-blend-mode: multiply; */
+    /* background-size: cover; */
+    /* background-position: center; */
 }
 
-.hero div {
+.left-side#hero-left {
+    height: 75%;
+    border-right: 1px solid var(--header-secondary);
+
+}
+
+.right-side#hero-right {
+
+}
+
+/* .hero div {
     height: 125px;
     width: 125px;
     background-image: url("../images/Rich.png");
-    /* background-color: rgba(158, 202, 205, 0.7); */
-    /* background-blend-mode: multiply; */
+    background-color: rgba(158, 202, 205, 0.7);
+    background-blend-mode: multiply;
     background-size: cover;
     border-radius: 30%;
     background-position: 50% 70%;
     margin-top: auto;
     margin-bottom: auto;
     z-index: 9;
-}
+} */
 
-.hero h2 {
-    position: relative;
+.hero h4 {
     background-color: var(--header-primary);
-    color: var(--header-secondary);
-    padding: 5px 10px;
-    bottom: 10px;right: 20px;
+    color: var(--font-color);  
+    margin-right: -20px; 
+}
+.hero h2 {
+    /* position: relative; */
+    background-color: var(--header-primary);
+    color: var(--font-color);
+    /* padding: 5px 10px; */
+    /* bottom: 10px;right: 20px; */
     /* margin-right: 60px; */
     /* margin-bottom: 10px; */
 }
