@@ -236,9 +236,9 @@ header nav ul li a:hover {
 .contact-info {
     display: flex;
     justify-content: space-evenly;
-    /* align-content: center; */
+    align-content: center;
     flex-wrap: wrap;
-    /* width: 100%; */
+    width: 100%;
 }
 
 .contact-info a {
@@ -408,10 +408,12 @@ header nav ul li a:hover {
     height: 100px;
     width: auto;
     }
+
     .app#featured h3 {
         width: 25%;
         font-size: smaller;
     }
+
     .app#featured p {
         width: 25%;
         font-size: smaller;
@@ -424,7 +426,7 @@ header nav ul li a:hover {
     .app h3, p {
         font-size: smaller;
     }
-    }
+    
     /* end work section */
 
 
