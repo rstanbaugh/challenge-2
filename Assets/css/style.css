@@ -152,6 +152,7 @@ header nav ul li a:hover {
 .work {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     margin-bottom: 15px;
 }
 
@@ -181,7 +182,7 @@ header nav ul li a:hover {
 }
 #featured {
     background-image: url("../images/02-run-buddy.jpg");
-    background-position: top;
+    background-position: 0 5%;
     height: 200px;
     width: 100%;
 }
@@ -198,7 +199,7 @@ header nav ul li a:hover {
 
 #app-3 {
     background-image: url("../images/02-portfolio-3.jpg");
-    background-position: right;
+    background-position: 100% 65%;
 }
 
 #app-4 {
@@ -212,17 +213,25 @@ header nav ul li a:hover {
     color: var(--header-secondary);
     width: 25%;
     padding-left: 5px;
-    margin-left: var(--line-thickness);
 }
+
+.app#featured h3 {
+    width: 15%;
+}
+
 
 .app p {
     position: relative;
+    margin-bottom: 10px;
     background-color: var(--header-primary);
     color: var(--header-secondary);
     width:25%;
     font-size: small;
     padding-left: 5px;
-    margin-left: var(--line-thickness);
+}
+
+.app#featured p {
+    width: 15%;
 }
 
 /* end work section */
@@ -271,7 +280,7 @@ header nav ul li a:hover {
 
 
 @media screen and (max-width: 900px) {
-    /* 900px footer section */
+    /* 900px  section */
     .left-side {
         /* 1/4 of the widht of the page */
         flex: 1;
@@ -286,10 +295,11 @@ header nav ul li a:hover {
     /* this class sets up the right side of the page in teh body */
     .right-side {
         display: flex;
-        flex: 1;
+        flex: 2;
         width: 100%;
         flex-wrap: wrap;
         padding-top: 5px;
+        padding-right: 10px;
         justify-content: space-between;
         margin: 5 20px 10px 10px;
     }
@@ -302,6 +312,7 @@ header nav ul li a:hover {
         align-content: flex-start;
         margin-top: 10px;
         margin-bottom: 15px;
+        padding-left: 10px;
     }
 
     .about-me h2 {
@@ -312,4 +323,32 @@ header nav ul li a:hover {
         font-size: 16px;
     }
     /* end about me */
+
+    /* work section */
+    .work {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        margin-bottom: 15px;
+        padding-left: 10px;
+
+    }
+
+    /* end work section */
+
+    /* footer section */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        padding-left: 10px;
+
+    }
+
+    .footer h2 {
+        display: inline;
+    }
 }
