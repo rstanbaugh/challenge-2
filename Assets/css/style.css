@@ -17,6 +17,7 @@
     --background:  #e9eef4;
     --shadow: rgba(0, 0, 0, 0.5);
     --line-thickness: 3px;
+    --paragraph-font-size: 16px;
 }
 
 body {
@@ -92,7 +93,6 @@ header nav ul li a:hover {
     margin-top: 10px;
     margin-bottom: 15px;
     align-items: center;
-    height: 300px;
 }
 
 
@@ -110,11 +110,10 @@ header nav ul li a:hover {
     flex-direction: column;
 }
 
-#avatar::before {
-    box-sizing: border-box;
-    border-color: var(--header-primary);
+.hero div p {
+    font-size: var(--paragraph-font-size);
+    font-style: italic;
 }
-
 
 
 .hero div h2 {
@@ -125,21 +124,6 @@ header nav ul li a:hover {
 ;
   }
 
-
-
-/* .hero div {
-    height: 125px;
-    width: 125px;
-    background-image: url("../images/Rich.png");
-    background-color: rgba(158, 202, 205, 0.7);
-    background-blend-mode: multiply;
-    background-size: cover;
-    border-radius: 30%;
-    background-position: 50% 70%;
-    margin-top: auto;
-    margin-bottom: auto;
-    z-index: 9;
-} */
 
 /* end of hero */
 
@@ -179,7 +163,7 @@ header nav ul li a:hover {
 }
 
 .about-me p {
-    font-size: 16px;
+    font-size: var(--paragraph-font-size);
 }
 /* end about me */
 
@@ -327,14 +311,24 @@ header nav ul li a:hover {
         margin: 5 20px 10px 10px;
     }
 
-    /* about me section */
+    /* hero section */
     .about-me {
         display: flex;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    /* end hero section */
+    .hero {
         flex-direction: column;
         justify-content: flex-start;
         align-content: flex-start;
-        margin-top: 10px;
-        margin-bottom: 15px;
+        padding-left: 20px;
+    }
+    /* about me section */
+    .about-me {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
         padding-left: 20px;
     }
 
@@ -343,13 +337,12 @@ header nav ul li a:hover {
     }
 
     .about-me p {
-        font-size: 16px;
+        font-size: var(--paragraph-font-size);
     }
     /* end about me */
 
     /* work section */
     .work {
-        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: flex-start;
