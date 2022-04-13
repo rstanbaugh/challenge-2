@@ -86,8 +86,11 @@ header nav ul li a:hover {
 /* hero section */
 .hero {
     width: 100%;
-    height: 150px;
+    height: 200px;
     display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     background-image: url("../images/hero-bg.jpg");
     background-color: rgba(158, 202, 205, 0.7);
     /* background-color: rgba(42, 96, 124, 0.7); */
@@ -96,15 +99,30 @@ header nav ul li a:hover {
     background-position: center;
     justify-content: flex-end;
     align-items: flex-end;
-    color: var(--header-primary);
+}
+
+.hero div {
+    height: 125px;
+    width: 125px;
+    background-image: url("../images/Rich.png");
+    /* background-color: rgba(158, 202, 205, 0.7); */
+    /* background-blend-mode: multiply; */
+    background-size: cover;
+    border-radius: 30%;
+    background-position: 50% 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 9;
 }
 
 .hero h2 {
+    position: relative;
     background-color: var(--header-primary);
     color: var(--header-secondary);
     padding: 5px 10px;
-    margin-right: 60px;
-    margin-bottom: 10px;
+    bottom: 10px;right: 20px;
+    /* margin-right: 60px; */
+    /* margin-bottom: 10px; */
 }
 /* end of hero */
 
