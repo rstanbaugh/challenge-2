@@ -371,6 +371,7 @@ header nav ul li a:hover {
 /* end 900px  section */
 /* ############################################ */
 
+/* ############################################ */
 /* 600px and below section */
 @media screen and (max-width: 600px) {
     .header {
@@ -402,6 +403,7 @@ header nav ul li a:hover {
     }
 
     .header nav ul li a {
+        font-size:medium;
         padding: 0;
     }
     /* end header & nav section */
