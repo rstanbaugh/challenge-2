@@ -76,6 +76,7 @@ body {
 header nav ul li a:hover {
     background: var(--header-primary);
     color: var(--header-secondary);
+    padding: 5px;
     border-radius: 10px;
 }
 /* end nav section */
@@ -249,6 +250,8 @@ header nav ul li a:hover {
 }
 
 .contact-info a:hover {
+    /* transition: all .5s ease; */
+    padding: 5px;
     background: var(--header-primary);
     color: var(--font-color);
     border-radius: 10px;
