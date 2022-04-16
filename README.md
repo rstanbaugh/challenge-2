@@ -2,7 +2,7 @@
 ##### Developed by: Rich Stanbuagh <br />
 
 
-![Stanbaugh](./assets/images/rich-portfolio-homepage.png)
+![Stanbaugh](./Assets/images/rich-portfolio-homepage.png)
 
 https://rstanbaugh.github.io/challenge-2/
 <br />
