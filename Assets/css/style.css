@@ -28,6 +28,8 @@ body {
 /* header section */
 .header {
     display: flex;
+    position: sticky;
+    top: 0;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 7px 10px 15px 0;
@@ -141,21 +143,6 @@ header nav ul li a:hover {
     justify-content: space-between;
     margin: 5 20px 10px 10px;
 }
-
-
-/* about me section */
-/* .about-me {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
-.about-me p {
-    font-size: var(--paragraph-font-size);
-} */
-
-/* end about me */
-
 
 /* work section */
 .work {
