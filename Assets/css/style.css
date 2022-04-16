@@ -186,18 +186,40 @@ header nav ul li a:hover {
     height: 100px;
     background-size: cover;
     border: var(--line-thickness) solid var(--header-primary);
-
 }
+
+.app:hover {
+    filter: brightness(120%);
+}
+
+
 #featured {
     background-image: url("../images/02-run-buddy.jpg");
     background-position: 0 5%;
     height: 200px;
     width: 100%;
+
+
+}
+.app-link {
+
+    height: 100%;
+    z-index: 2;
+    /* border: red solid; */
 }
 
 #app-1 {
     background-image: url("../images/02-portfolio-1.jpg");
     background-position: center;
+}
+
+.app-link {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    /* top: 0; */
+    /* left: 0; */
+    z-index: 1;
 }
 
 #app-2 {
@@ -215,21 +237,31 @@ header nav ul li a:hover {
     background-position: center;
 }
 
-.app h3 {
+.app#featured h3 {
     position: relative;
+    top: 75%;
+    width: 15%;
+}
+
+.app#featured p {
+    position: relative;
+    top: 75%;
+    width: 15%;
+}
+
+
+.app a h3 {
+    position: relative;
+    top: 55%;
     background-color: var(--header-primary);
     color: var(--header-secondary);
     width: 25%;
     padding-left: 5px;
 }
 
-.app#featured h3 {
-    width: 15%;
-}
-
-
-.app p {
+.app a p {
     position: relative;
+    top: 55%;
     margin-bottom: 10px;
     background-color: var(--header-primary);
     color: var(--font-color);
@@ -238,9 +270,7 @@ header nav ul li a:hover {
     padding-left: 5px;
 }
 
-.app#featured p {
-    width: 15%;
-}
+
 /* end work section */
 
 
@@ -438,11 +468,13 @@ header nav ul li a:hover {
     }
 
     .app#featured h3 {
+        top: 60%;
         width: 25%;
         font-size: smaller;
     }
 
-    .app#featured p {
+    .app#featured a p {
+        top: 60%;
         width: 25%;
         font-size: smaller;
     }
@@ -451,8 +483,8 @@ header nav ul li a:hover {
         width: auto;
     }
 
-    .app h3, p {
-        font-size: smaller;
+    .app a h3, p {
+        font-size: smallest;
     }
     
     /* end work section */
