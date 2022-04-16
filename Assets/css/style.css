@@ -144,7 +144,7 @@ header nav ul li a:hover {
 
 
 /* about me section */
-.about-me {
+/* .about-me {
     display: flex;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -152,7 +152,7 @@ header nav ul li a:hover {
 
 .about-me p {
     font-size: var(--paragraph-font-size);
-}
+} */
 
 /* end about me */
 
