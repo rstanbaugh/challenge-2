@@ -250,7 +250,6 @@ header nav ul li a:hover {
 }
 
 .contact-info a:hover {
-    /* transition: all .5s ease; */
     padding: 5px;
     background: var(--header-primary);
     color: var(--font-color);
