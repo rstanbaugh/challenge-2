@@ -161,6 +161,8 @@ header nav ul li a:hover {
 
 /* highlight app as cursor moves over it */
 .app:hover {
+    transition: all .5s ease;
+    background-size: 105%;
     filter: brightness(120%);
 }
 
