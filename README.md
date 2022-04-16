@@ -9,10 +9,10 @@ https://rstanbaugh.github.io/challenge-2/
 <br />
 
 ## Description
-This page is a portfolio of my work with links t0:
-- selected apps that are in production
-- contact information, and
-- my resume
+This page is a portfolio of my work, including:
+- Links to selected apps that I have in production
+- Contact information, and
+- Resume
 <br />
 <br />
 
