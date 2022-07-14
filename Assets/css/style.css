@@ -211,19 +211,20 @@ header nav ul li a:hover {
 }
 
 #app-2 {
-    background-image: url("../images/VocabBuilder.png");
-    background-size: 80`%;
-    background-position: 75% 10%;
+    background-image: url("../images/VocabBuilder-2.png");
+    background-size: 80%;
+    background-position: 75% 10;
+    0%;
 }
 
 #app-3 {
-    background-image: url("../images/02-portfolio-3.jpg");
-    background-position: 100% 65%;
+    background-image: url("../images/bootcamp-overflow-screenshot.png");
+    background-position: 0% 0%;
 }
 
 #app-4 {
     background-image: url("../images/02-portfolio-4.jpg");
-    background-position: center;
+    background-position: 0% 50%;
 }
 /* end work section */
 
